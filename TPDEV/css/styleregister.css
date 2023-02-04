@@ -1,0 +1,282 @@
+ /* Couleurs utilisées */
+ :root {
+    --secondary-color: #212121;
+    --tertiary-color: #f5f5f5;
+    }
+   /* Body */
+   body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  h1{
+    text-align: center;
+    color: #FFD700;
+    text-shadow: 2px 2px black;
+
+  }
+    /* Header */
+    header {
+    background-color: var(--secondary-color);
+    }
+
+
+/* Style de la navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    height: 50px;
+    font-size: 14px;
+    padding: 0 1em;
+    }
+    nav a:hover {
+        background-color: #FFD700;
+        color: #333;
+      }
+    
+    .navbar-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .navbar-item {
+    margin: 0 1em;
+    }
+    
+    nav a {
+    color: #FFD700;
+    text-decoration: none;
+    }
+    
+    .logout-button {
+    background-color: #FFD700;
+    color: #333;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 1em;
+    }
+    
+    .facebook-button, .panier-button {
+    margin-left: 1em;
+    }
+    
+    .welcome-message {
+    color: #FFD700;
+    margin-right: 1em;
+    }
+    
+    /* Style de la div contact-info */
+    .contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #333;
+    color: #FFD700;
+    font-size: 14px;
+    }
+    
+    .contact-info span {
+    display: inline-block;
+    margin: 0 1em;
+    }
+    
+    .contact-info i {
+    margin-right: 0.5em;
+    }
+    
+    
+    
+    
+    
+   /* Mise en forme générale des sections */
+   .form-container {
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #333;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .form-container h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .form-container form {
+    display: inline-block;
+  }
+  
+  .form-container label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .form-container input[type="text"],.form-container input[type="email"],
+  .form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .form-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-container p {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .form-container a {
+    color: #333;
+    text-decoration: none;
+  }
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .pagination a {
+    display: block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #ddd;
+    text-decoration: none;
+    color: black;
+  }
+  
+  #securite-sur-mesure-fabrication {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+  }
+  
+  #securite-sur-mesure-fabrication img {
+    margin-right: 10px;
+  }
+  
+  .securite, .sur-mesure, .fabrication-france {
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+  }
+   /* Footer */
+   footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background-color: #3F3F3F;
+    color: #FFD700;
+  }
+  
+  footer p, footer a {
+    margin: 0 10px;
+    color: #FFD700;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 20px;
+  }
+  
+  .footer-info, .footer-contact {
+    width: 45%;
+    text-align: center;
+  }
+  
+  .footer-info h3, .footer-contact h3 {
+    margin-bottom: 20px;
+    color: #FFD700;
+  }
+@keyframes scroll-right {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}    
+
+/* Style pour la fonction haut de page  */
+.top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffd700;
+    color: black;
+    padding: 15px;
+    border: 2px solid black;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+/* Style pour le tremblement*/
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  
+  h1.shake {
+    animation: shake0.5s;
+}
+
+h1:hover {
+animation: shake 0.5s;
+}
+
+/* Style css pour modifier la scrollbar*/
+
+::-webkit-scrollbar {
+    width: 10px;
+    border: 2px solid black;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: gold;
+    border: 2px solid black;
+  }
+  
